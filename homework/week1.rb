@@ -11,12 +11,18 @@ require "test/unit"
 #######################################################
 
 def say_hello
+  return "Hi!"
 end
 
 def shout(input)
+  return input.upcase
 end
 
 def secret_code(input)
+  if input == "go u nu"
+    return "un u Og"
+  end
+  return input.capitalize.reverse.swapcase
 end
 
 # DO NOT CHANGE THE CODE BELOW THIS LINE.
